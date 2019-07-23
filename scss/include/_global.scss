@@ -1,0 +1,176 @@
+@import "_variabale";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400|Pacifico');
+
+ul{
+	padding: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+body{
+    font-weight: 400;
+    font-family: $body-font;
+}
+a,
+a:hover,
+a:active,
+a:focus{
+	text-decoration: none;
+}
+@keyframes landarrow {0% {transform:translateY(0%);}50% {transform:translateY(15%);}100% {transform:translateY(0%);}}
+@-moz-keyframes landarrow {0% {-moz-transform:translateY(0%);}50% {-moz-transform:translateY(15%);}100% {-moz-transform:translateY(0%);}}
+@-webkit-keyframes landarrow {0% {-webkit-transform:translateY(0%);}50% {-webkit-transform:translateY(15%);}100% {-webkit-transform:translateY(0%);}}
+.home-overlay{
+    position:absolute;
+    background: rgba($black,0.2);
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    z-index: -1;
+}
+.menu-content-social{
+    display: inline-block;
+    li{
+        margin-right: 15px;
+        a{
+            display: block;
+            height: 30px;
+            width: 30px;
+            padding-top: 5px;
+            text-align: center;
+            background: $social-bg;
+            border-radius: 50%;
+            color: $black;
+            transition: all 0.6s ease 0s;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
+.yellow-text{
+    color: $primary-color;
+}
+.landing-animation{
+    animation-name: landarrow;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    text-align: center;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    text-align: center;
+    width: 40px;
+}
+footer{
+    background: $footer-bg;
+    padding: 30px 15px 15px;
+    border-top: 4px solid $primary-color;
+}
+.comming-event{
+    position: absolute;
+    bottom: 26px;
+    right: 60px;
+    z-index: 110;
+    a,i{
+        transition: all 0.1s ease 0s;
+        color: $primary-color;
+        &:hover{
+            opacity: 0.7;
+            i{
+                transform: translateX(10px);
+            }
+        }
+    }
+}
+.button-wrapper{
+    background: $white;
+    padding: 20px 10px 125px;
+}
+.btn-custom{
+    width: 100%;
+    max-width: 370px;
+    border: 2px solid $btn-color;
+    padding: 15px 20px;
+    text-align: center;
+    color: $btn-color;
+    background: $white;
+    font-size: 24px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    transition: all 0.4s linear 0s;
+    &:hover{
+        background: $btn-color;
+        color: $white;
+        border-color: $btn-color;
+    }
+}
+.flickr-section{
+    .flickr-heading{
+        margin-bottom: 95px;
+        color: $white;
+        h1{
+            font-family: $heading-font;
+            font-size: 50px;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                height: 1px;
+                width: 124px;
+                background: #949494;
+                left: 50%;
+                margin-left: -61.5px;
+
+            }
+        }
+    }
+    .flickr-img{
+        display: inline-block;
+        margin-right: 16px;
+        overflow: hidden;
+        &:hover{
+            img{
+                transform: scale(1.2) rotate(15deg);
+            }
+        }
+        img{
+            transition: all 0.7s ease 0s;
+        }
+    }
+    .footer-text{
+        color: $footer-name-color;
+        margin-top: 74px;
+    }
+}
+.hover-social{
+    margin:67px auto 0;
+    display: flex;  
+    li{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        a{
+            color: $white;
+            font-size: 20px;
+            display: block;
+            width: 44px;
+            height: 44px;
+            text-align: center;
+            padding-top: 9px;
+            background: $white;
+            color: $hover-icon;
+            &:hover{
+                opacity: 0.8;
+            }
+            @media screen and (max-width: 1024px){
+                font-size: 5rem;
+            }
+            @media screen and (max-width: 768px){
+                font-size: 3rem;
+            }
+        }
+    }
+}

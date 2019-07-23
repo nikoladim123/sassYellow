@@ -1,0 +1,74 @@
+.instagram-section{
+	padding : 20px 0px 107px;
+	background: $insta-bg;
+	text-align: center;
+	.instagram-images{
+		padding: 0 55px;
+	}
+	.insta-img{
+		max-width: 33.333%;
+		padding: 22px;
+		float: left;
+		overflow: hidden;
+		@media screen and (max-width: 768px){
+			display: inline-block;
+			margin-right: -4px;
+			vertical-align: top;
+			max-width: 50%;
+			padding: 5px;
+		}
+		@media screen and (max-width: 400px){
+			max-width: 100%;
+			img{
+				margin: auto;
+			}
+		}
+		img{
+			transition: transform 0.3s linear 0s;
+		}
+		&:hover{
+			img{
+				transform: scale(1.2);
+			}
+		}
+	}
+	.instagram-heading{
+		
+		h1{
+			font-weight: 300;
+			margin: 0px;
+			font-size: 55px;
+			display: inline-block;
+			position:relative;
+			padding-bottom: 10px;
+			color: $white;
+			font-family: $heading-font;
+			text-transform: capitalize;
+			@media screen and (max-width: 768px){
+				font-size: 24px;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: 0px;
+				height: 1px;
+				width: 124px;
+				background: #949494;
+				left: 50%;
+				margin-left: -61.5px;
+
+			}
+		}
+	}
+	.instagram{
+		margin-top: 37px;
+		p{
+			margin-bottom: 20px;
+			font-weight: 300;
+			font-family: $body-font;
+			font-size: 18px;
+			color: $white;
+			text-transform: capitalize;
+		}
+	}
+}

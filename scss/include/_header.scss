@@ -1,0 +1,80 @@
+/* Header css */
+.social-section{
+	background: $social-bg;
+	padding : 62px 15px 130px;
+	@media screen and (max-width: 768px){
+		padding: 60px 15px;	
+	}
+	.social-heading{
+		h2{
+			margin: 0px;
+			font-family: $heading-font;
+			color: $white;
+			font-size: 55px;
+			margin-bottom: 55px;
+			display: inline-block;
+			position: relative;
+			@media screen and (max-width: 768px){
+				font-size: 22px;
+				margin-bottom: 40px;
+			}
+			&:after{
+				bottom: -16px;
+			    content: "";
+			    height: 1px;
+			    left: 50%;
+			    margin-left: -59.5px;
+			    position: absolute;
+			    width: 125px;
+				background: #949494;
+
+			}
+		}
+	}
+}
+.social-icons{
+	position: relative;
+	> li{
+		display: inline-block;
+		margin-right: 4px;
+		> a{
+			display: block;
+			padding: 3px 8px;
+			font-size: 22px;
+			border-radius: 50%;
+			width: 39px;
+			height: 39px;
+			color: $white;
+			background: $social-icon;
+			text-shadow: 0px 1px 0.5px rgba(0,0,0,0.6);
+			transition: all 0.2s linear 0s;
+			&:hover{
+				color : $primary-color !important;
+			}
+		}
+	}
+}
+.login-btn{
+	> li{
+		display: inline-block;
+		&:first-child{
+			a{
+				font-size: 18px;
+			}
+		}
+		> a{
+			display: block;
+			padding: 2px 12px;
+			border-radius: 4px;
+			color: rgba($white,0.8);
+			&:hover{
+				color : $primary-color;
+			}
+			@media screen and (max-width:768px){
+				padding: 2px 6px;
+			}
+		}
+	}
+}
+
+/* end header css */
